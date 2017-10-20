@@ -3818,10 +3818,13 @@
                 // b.node.onclick = function() {window.location.href = "./" + a.contest};
                 b.node.onclick = function() {
 
-                    if(a.contest!="schedule")
-                        window.location.href = "./" + a.contest + ".html";
-                    else
+                     if(a.contest=="schedule")
                         window.location.href = "./" + a.contest + ".pdf";
+                        //window.location.href = "./" + a.contest + ".html";
+                    else if(a.contest=="code-craft")
+                        window.location.href = "http://codeforces.com/group/yny9prUF8z";
+                    else
+                         window.location.href = "./" + a.contest + ".html";
 
                 };
                 !a.isFirst && a.bringForwardOnHover && (b.toFront(), a.isFirst = !0);
