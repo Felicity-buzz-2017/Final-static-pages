@@ -1186,7 +1186,7 @@
             this.borderAlpha = this.backgroundAlpha = 0;
             this.color = this.borderColor = "#000000";
             this.fontFamily = "Verdana";
-            this.fontSize = 11;
+            this.fontSize = 16;
             this.usePrefixes = !1;
             this.autoResize = !0;
             this.autoDisplay = !1;
