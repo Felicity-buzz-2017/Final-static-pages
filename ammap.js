@@ -3815,7 +3815,15 @@
             if (!a.showAsSelected && b && !a.isOver) {
                 b.node.onmouseout = function() {};
                 b.node.onmouseover = function() {};
-                b.node.onclick = function() {window.location.href = "./" + a.contest};
+                // b.node.onclick = function() {window.location.href = "./" + a.contest};
+                b.node.onclick = function() {
+
+                    if(a.contest!="schedule")
+                        window.location.href = "./" + a.contest + ".html";
+                    else
+                        window.location.href = "./" + a.contest + ".pdf";
+
+                };
                 !a.isFirst && a.bringForwardOnHover && (b.toFront(), a.isFirst = !0);
                 var c = a.rollOverColorReal,
                     e;
