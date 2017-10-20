@@ -3808,7 +3808,7 @@
         },
         showAsRolledOver: function(a) {
             var b = a.displayObject;
-            console.log(a);
+            //console.log(a);
             a.rollOverColorReal = "#b30000";
             a.rollOverScaleReal = 2;
             a.balloonTextReal = "[[title]]";
@@ -4229,10 +4229,10 @@
             }
         },
         doDoubleClickZoom: function() {
-            if (!this.mapWasDragged) {
+          /*  if (!this.mapWasDragged) {
                 var a = this.zoomLevel() * this.zoomControl.zoomFactor;
                 this.zoomToStageXY(a, this.mouseX, this.mouseY)
-            }
+           }*/
         },
         getDevInfo: function() {
             var a = this.zoomLevel(),
